@@ -1,3 +1,7 @@
+**2025-07-22: Not actively maintained.** Want to take over maintenance? [Let me know.](https://henrik.nyh.se)
+
+---
+
 # ProgressBar for Elixir
 
 [![Build Status](https://travis-ci.org/henrik/progress_bar.svg?branch=master)](https://travis-ci.org/henrik/progress_bar)
