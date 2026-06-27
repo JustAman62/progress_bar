@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.0
+
+* Repository/package ownership transferred to @JustAman62
+* Remove Decimal library dependency. Thanks to Aaron Tavistock!.
+
 ## 3.0.0
 
 * Fixes deprecation warning by dropping support for Elixir <1.9.
