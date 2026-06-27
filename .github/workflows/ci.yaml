@@ -1,0 +1,40 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  main:
+    name: "main (${{ matrix.compat.elixir }}, ${{ matrix.compat.otp }})"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        compat:
+          - elixir: "1.20.2"
+            otp: "28.5.0.2"
+            # lint only on latest elixir version
+            lint: true
+          - elixir: "1.15.8"
+            otp: "26.2.5.21"
+          - elixir: "1.11.4"
+             # elixir 1.11 is the old version we can test
+            # as OTP v24 is the earliest version supported on GH runners
+            # see erlef/setup-elixir for information
+            otp: "24.3.4.17"
+    steps:
+      - uses: actions/checkout@v7
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: ${{ matrix.compat.otp }}
+          elixir-version: ${{ matrix.compat.elixir }}
+      - run: mix deps.get
+      - run: mix format --check-formatted
+        if: ${{ matrix.compat.lint }}
+      - run: mix deps.unlock --check-unused
+        if: ${{ matrix.compat.lint }}
+      - run: mix deps.compile
+      - run: mix compile --warnings-as-errors
+        if: ${{ matrix.compat.lint }}
+      - run: mix test
