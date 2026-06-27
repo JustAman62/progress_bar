@@ -1,7 +1,7 @@
 defmodule ProgressBar.Mixfile do
   use Mix.Project
 
-  @source_url "https://github.com/henrik/progress_bar"
+  @source_url "https://github.com/JustAman62/progress_bar"
 
   def project do
     [
@@ -25,7 +25,7 @@ defmodule ProgressBar.Mixfile do
   def package do
     [
       description: "Command-line progress bars and spinners.",
-      maintainers: ["Henrik Nyh"],
+      maintainers: ["Henrik Nyh", "Aman Dhoot"],
       licenses: ["MIT"],
       links: %{"GitHub" => @source_url}
     ]
