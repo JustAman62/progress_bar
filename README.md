@@ -1,15 +1,10 @@
-**2025-07-22: Not actively maintained.** Want to take over maintenance? [Let me know.](https://henrik.nyh.se)
-
----
-
 # ProgressBar for Elixir
 
-[![Build Status](https://travis-ci.org/henrik/progress_bar.svg?branch=master)](https://travis-ci.org/henrik/progress_bar)
 [![Module Version](https://img.shields.io/hexpm/v/progress_bar.svg)](https://hex.pm/packages/progress_bar)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/progress_bar/)
 [![Total Download](https://img.shields.io/hexpm/dt/progress_bar.svg)](https://hex.pm/packages/progress_bar)
-[![License](https://img.shields.io/hexpm/l/progress_bar.svg)](https://github.com/henrik/progress_bar/blob/master/LICENSE.md)
-[![Last Updated](https://img.shields.io/github/last-commit/henrik/progress_bar.svg)](https://github.com/henrik/progress_bar/commits/master)
+[![License](https://img.shields.io/hexpm/l/progress_bar.svg)](https://github.com/justaman62/progress_bar/blob/master/LICENSE.md)
+[![Last Updated](https://img.shields.io/github/last-commit/justaman62/progress_bar.svg)](https://github.com/justaman62/progress_bar/commits/master)
 
 Command-line progress bars and spinners.
 
@@ -19,6 +14,7 @@ Command-line progress bars and spinners.
 * [Examples](#examples)
 * [Installation](#installation)
 * [License](#license)
+* [Credits](#credits)
 
 
 ## Usage
@@ -351,6 +347,11 @@ Then fetch it:
 ## See Also
 
 * [simple_bar](https://github.com/jeffreybaird/simple_bar)
+
+
+## Credits
+
+This library was originally developed by Henrik Nyh ([@henrik](https://github.com/henrik)), then transferred to [@JustAman62](https://github.com/JustAman62) in 2026 to continue its development.
 
 
 ## License
